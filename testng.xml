@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/amazon/IdeaProjects/EgyptLaptop">
+        <classes>
+            <class name="testcases.SC001_SearchFunc">
+                <methods>
+                    <include name="input_search_test"/>
+                    <include name="load_more_products_to_search_result"/>
+                    <include name="auto_suggest_search_test"/>
+                    <include name="user_can_filter_search_results"/>
+                    <include name="user_can_remove_search_filter"/>
+                    <include name="user_enter_invalid_search_data"/>
+                </methods>
+            </class>
+            <class name="testcases.SC002_CartFunc">
+                <methods>
+                    <include name="add_product_from_search_page"/>
+                    <include name="cart_icon_shows_added_product"/>
+                    <include name="add_more_than_one_item"/>
+                    <include name="added_products_shows_in_cart"/>
+                    <include name="verify_if_cart_is_empty"/>
+                </methods>
+            </class>
+            <class name="testcases.SC003_CheckoutFunc">
+                <methods>
+                    <include name="customer_info_check"/>
+                    <include name="cs_can_not_place_order_before_sign_in"/>
+                    <include name="cs_can_not_place_order_without_address"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
